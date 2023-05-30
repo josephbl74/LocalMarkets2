@@ -13,6 +13,7 @@
 * limitations under the License.
 */
 
+//test
 
 
 //Importing classes class from @googlemaps/js-api-loader >>> stored in package.json
