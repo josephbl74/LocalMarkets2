@@ -18,5 +18,8 @@
   },
   "devDependencies": {
     "@webpack-cli/serve": "^2.0.4"
+  },
+  "engines": {
+    "node": "20.2.0"
   }
 }

@@ -13,7 +13,7 @@
 * limitations under the License.
 */
 
-//test
+const CONCURRENCY = process.env.WEB_CONCURRENCY || 1;
 
 
 //Importing classes class from @googlemaps/js-api-loader >>> stored in package.json
