@@ -54,8 +54,8 @@ function displayMap() {
 
         // Map options
         const mapOptions = {
-          // center: currentLocation,
-          center: { lat: 45.7640, lng: 4.8357 }, // Lyon
+          center: currentLocation,
+          // center: { lat: 45.7640, lng: 4.8357 }, // Lyon
           // center: { lat: -33.860664, lng: 151.208138 }, // Sydney
           zoom: 14, // Adjust the zoom level as desired
           mapId: 5e1
