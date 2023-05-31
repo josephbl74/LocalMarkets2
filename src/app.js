@@ -40,7 +40,8 @@ loader.load().then(() => {
 
 
 
-
+// const newLgt;
+// const newLat;
 
 
 // function handleText() {
@@ -100,6 +101,44 @@ function displayMap() {
 
         const markers = addMarkers(map); // displaying markers
         const clusters = clusterMarkers(map, markers); //displaying marker clusters
+
+
+
+
+
+
+
+        // ----- window for adding a new marker to the map
+
+        //setting a position on map for this marker
+        // var newMarkerPosition = currentLocation;
+        var newMarkerPosition = new google.maps.LatLng(latitude+0.015, longitude+0.015);
+
+        // creating an initial window
+        let newMarkerWindow = new google.maps.InfoWindow({
+          content: "Click the map to add new marker",
+          position: newMarkerPosition,
+        });
+      
+        newMarkerWindow.open(map);
+        // Configuring the click listener.
+        map.addListener("click", (mapsMouseEvent) => {
+          // Closing the current InfoWindow.
+          newMarkerWindow.close();
+          // Creating a new InfoWindow.
+          newMarkerWindow = new google.maps.InfoWindow({
+            position: mapsMouseEvent.latLng,
+          });
+          // newMarkerWindow.setContent(
+          //   JSON.stringify(mapsMouseEvent.latLng.toJSON(), null, 2)
+          // );
+          newMarkerWindow.setContent("New Marker");
+          newMarkerWindow.open(map);
+        });
+
+
+
+
 
         return map;
       },
