@@ -38,6 +38,29 @@ loader.load().then(() => {
     addPanToMarker(map, markers); // centering map view on a clicked marker
 });
 
+
+
+
+
+
+// function handleText() {
+//   // Retrieve the input value
+//   var inputText = document.getElementById("myInput").value;
+
+//   // Perform actions based on the input
+//   // For example, display the input in an alert
+//   alert("Input: " + inputText);
+//   console.log(inputText)
+
+//   // Clear the input field
+//   document.getElementById("myInput").value = "";
+// }
+
+
+
+
+
+
 // Displaying the map taking into account location
 function displayMap() {
   // Checking if the browser supports the Geolocation API
@@ -108,45 +131,7 @@ function displayMap() {
 
 // Adding markers to the map.
 function addMarkers(map) {
-    // const locations = {
-    //   operaHouse: { lat: -33.8567844, lng: 151.213108 },
-    //   tarongaZoo: { lat: -33.8472767, lng: 151.2188164 },
-    //   manlyBeach: { lat: -33.8209738, lng: 151.2563253 },
-    //   hyderPark: { lat: -33.8690081, lng: 151.2052393 },
-    //   theRocks: { lat: -33.8587568, lng: 151.2058246 },
-    //   circularQuay: { lat: -33.858761, lng: 151.2055688 },
-    //   harbourBridge: { lat: -33.852228, lng: 151.2038374 },
-    //   kingsCross: { lat: -33.8737375, lng: 151.222569 },
-    //   botanicGardens: { lat: -33.864167, lng: 151.216387 },
-    //   museumOfSydney: { lat: -33.8636005, lng: 151.2092542 },
-    //   maritimeMuseum: { lat: -33.869395, lng: 151.198648 },
-    //   kingStreetWharf: { lat: -33.8665445, lng: 151.1989808 },
-    //   aquarium: { lat: -33.869627, lng: 151.202146 },
-    //   darlingHarbour: { lat: -33.87488, lng: 151.1987113 },
-    //   barangaroo: { lat: - 33.8605523, lng: 151.1972205 }
-    // }
 
-    // defining locations data
-    // const locations = {
-    //   operaHouse: [{ lat: -33.8567844, lng: 151.213108 },"My description...", "https://mywebsite", "creation_date"],
-    //   tarongaZoo: [{ lat: -33.8472767, lng: 151.2188164 },"My description...", "https://mywebsite", "creation_date"],
-    //   manlyBeach: [{ lat: -33.8209738, lng: 151.2563253 },"My description...", "https://mywebsite", "creation_date"],
-    //   hyderPark: [{ lat: -33.8690081, lng: 151.2052393 },"My description...", "https://mywebsite", "creation_date"],
-    //   theRocks: [{ lat: -33.8587568, lng: 151.2058246 },"My description...", "https://mywebsite", "creation_date"],
-    //   circularQuay: [{ lat: -33.858761, lng: 151.2055688 },"My description...", "https://mywebsite", "creation_date"],
-    //   harbourBridge: [{ lat: -33.852228, lng: 151.2038374 },"My description...", "https://mywebsite", "creation_date"],
-    //   kingsCross: [{ lat: -33.8737375, lng: 151.222569 },"My description...", "https://mywebsite", "creation_date"],
-    //   botanicGardens: [{ lat: -33.864167, lng: 151.216387 },"My description...", "https://mywebsite", "creation_date"],
-    //   museumOfSydney: [{ lat: -33.8636005, lng: 151.2092542 },"My description...", "https://mywebsite", "creation_date"],
-    //   maritimeMuseum: [{ lat: -33.869395, lng: 151.198648 },"My description...", "https://mywebsite", "creation_date"],
-    //   kingStreetWharf: [{ lat: -33.8665445, lng: 151.1989808 },"My description...", "https://mywebsite", "creation_date"],
-    //   aquarium: [{ lat: -33.869627, lng: 151.202146 },"My description...", "https://mywebsite", "creation_date"],
-    //   darlingHarbour: [{ lat: -33.87488, lng: 151.1987113 },"My description...", "https://mywebsite", "creation_date"],
-    //   barangaroo: [{ lat: -33.8605523, lng: 151.1972205 },"My description...", "https://mywebsite", "creation_date"],
-    //   marcheDesCharpennes: [{ lat: 45.77368819287403, lng: 4.8678173295917695 },"My description...", "https://mywebsite", "creation_date"],
-    //   marcheDeCroixLuizet: [{ lat: 45.78068542790973, lng: 4.883081666499264 },"My description...", "https://mywebsite", "creation_date"]
-    // }
-    
     //inserting 2 location
     
     const locations = {
@@ -158,9 +143,6 @@ function addMarkers(map) {
     //   //load markets into the db
     //   loadDataBase('insert', markets[market]);
     // }
-
-
-
 
     // // loading mongodb database
     // const MongoClient = require('mongodb').MongoClient;

@@ -16,7 +16,7 @@
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
  #map {
-  width: 80%;
+  width: 70%;
   height: 80%;
 }
 
@@ -28,4 +28,15 @@ body {
   padding: 0;
 }
 
+main {
+  padding: 10px;
+  margin: 10px;
+}
 
+aside {
+  width: 25%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+}
