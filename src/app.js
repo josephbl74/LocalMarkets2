@@ -40,8 +40,8 @@ loader.load().then(() => {
 
 
 
-// const newLgt;
-// const newLat;
+const newLgt=0;
+const newLat=0;
 
 
 // function handleText() {
